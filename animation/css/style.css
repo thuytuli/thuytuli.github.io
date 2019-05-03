@@ -1,0 +1,192 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+a:link{
+	color: black;
+}
+
+a:visited{
+	color: black;
+}
+
+a:hover{
+	color: black;
+	text-decoration: underline;
+}
+
+a:active{
+	color: black;
+}
+
+.wrap {
+	position: relative;
+	float: left;
+	min-height: 46em;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+}
+
+.cell {
+	width: 33.3333333333%;
+	float: left;
+	padding: 15px;
+	position: relative;
+}
+
+.thumb {
+	padding: 10px;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.thumb img {
+	transition: all 0.5s linear;
+}
+
+.thumb:hover  img{
+	transform: scale(1.2);
+	opacity: 0.8;
+}
+
+h1 {
+	margin: 25px 0 10px 0;
+	font-size: 3em;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: rgb(142, 11, 0);
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.6); animation-name: title; animation-duration: 10s; animation-timing-function: ease; animation-iteration-count: infinite;
+}
+
+@keyframes title {
+	0% {background-color: #ef7126; color: #f9e559;}
+	25% {background-color: #6f3662; color: #ffffff;}
+	50% {background-color: #9f6164; color: #f8debd;}
+	75% {background-color: #44b3c2; color: #ffffff;}
+	100% {background-color: #218c8d; color: #f9e559;}
+}
+
+@-webkit-keyframes title {
+	0% {background-color: #ef7126; color: #f9e559;}
+	25% {background-color: #6f3662; color: #ffffff;}
+	50% {background-color: #9f6164; color: #f8debd;}
+	75% {background-color: #44b3c2; color: #ffffff;}
+	100% {background-color: #218c8d; color: #f9e559;}
+}
+
+@-moz-keyframes title {
+	0% {background-color: #ef7126; color: #f9e559;}
+	25% {background-color: #6f3662; color: #ffffff;}
+	50% {background-color: #9f6164; color: #f8debd;}
+	75% {background-color: #44b3c2; color: #ffffff;}
+	100% {background-color: #218c8d; color: #f9e559;}
+}
+
+@-o-keyframes title {
+	0% {background-color: #ef7126; color: #f9e559;}
+	25% {background-color: #6f3662; color: #ffffff;}
+	50% {background-color: #9f6164; color: #f8debd;}
+	75% {background-color: #44b3c2; color: #ffffff;}
+	100% {background-color: #218c8d; color: #f9e559;}
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.fade-in {
+  animation: fadeIn ease 15s infinite;
+  -webkit-animation: fadeIn ease 15s infinite;
+  -moz-animation: fadeIn ease 15s infinite;
+  -o-animation: fadeIn ease 15s infinite;
+  -ms-animation: fadeIn ease 15s infinite;
+}
+
+.marquee {
+  position: relative;
+  text-align: right;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: example; 
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: example; 
+  -moz-animation-duration: 5s;
+  -moz-animation-iteration-count: infinite; 
+  -o-animation-name: example; 
+  -o-animation-duration: 5s;
+  -o-animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%  {right:0; top:0;}
+  10%  {right:10%; top:0; opacity:1;}
+  50%  {right:10%; top:0; opacity:1;}
+  100%  {right:40%; top:0; opacity:0;}
+}
+
+@-webkit-keyframes example {
+  0%  {right:0; top:0;}
+  10%  {right:10%; top:0; opacity:1;}
+  50%  {right:10%; top:0; opacity:1;}
+  100%  {right:40%; top:0; opacity:0;}
+}
+
+@-moz-keyframes example {
+  0%  {right:0; top:0;}
+  10%  {right:10%; top:0; opacity:1;}
+  50%  {right:10%; top:0; opacity:1;}
+  100%  {right:40%; top:0; opacity:0;}
+}
+
+@-o-keyframes example {
+  0%  {right:0; top:0;}
+  10%  {right:10%; top:0; opacity:1;}
+  50%  {right:10%; top:0; opacity:1;}
+  100%  {right:40%; top:0; opacity:0;}
+}
+
+/*.split-home{
+	/*float: left;*/
+	/*height: 50%;*/
+	
+	/*position: fixed;
+	top: 50;*/
+	/*padding: 5%;*/
+	/*margin: 0 auto 30px auto;*/
+	/*box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}*/
+
+/*.split-home:hover img {
+	box-shadow: 0 1px 3px rgba(0,0,0,1);
+}*/
+
+footer {
+	clear: both;
+	padding: 30px 0;
+	text-align: center;
+}
+
+footer p{
+	margin: 0;
+	padding: 30px 0 15px 0;
+	border-top: 1px solid #c5c5c5;
+}
